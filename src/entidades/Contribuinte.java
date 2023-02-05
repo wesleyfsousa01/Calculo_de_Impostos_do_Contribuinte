@@ -2,7 +2,7 @@ package entidades;
 
 public abstract class Contribuinte {
     private String nome;
-    protected Double rendaAnual;
+    private Double rendaAnual;
 
     public Contribuinte(String nome, Double rendaAnual) {
         this.nome = nome;

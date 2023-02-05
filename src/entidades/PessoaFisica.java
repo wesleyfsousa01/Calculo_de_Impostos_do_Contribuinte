@@ -19,11 +19,11 @@ public class PessoaFisica extends Contribuinte {
     @Override
     public double taxa() {
         double imposto = 0;
-        if(rendaAnual < 20000){
-            imposto = (rendaAnual * 0.15) - (despesasComSaude * 0.5);
+        if(getRendaAnual() < 20000){
+            imposto = (getRendaAnual() * 0.15) - (despesasComSaude * 0.5);
             return  imposto;
         }else {
-            imposto = (rendaAnual * 0.25) - (despesasComSaude * 0.5);
+            imposto = (getRendaAnual() * 0.25) - (despesasComSaude * 0.5);
             return imposto;
         }
     }
